@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename="style.css") }}">
+</head>
+<body>
+    <h1>Counter</h1>
+    <h2>{{session['num']}}</h2>
+    <div class = "buttons">
+        <div class ="click">
+            <button onclick="window.location.href='http://localhost:5000/count';">Click</button>
+        </div>
+        <div class="clear">
+            <button onclick="window.location.href='http://localhost:5000/destroy_session';">Clear</button>
+        </div>
+    </div>
+    <div class ="click2">
+        <button onclick="window.location.href='http://localhost:5000/count2';">Double Click</button>
+    </div>
+</body>
+</html>
